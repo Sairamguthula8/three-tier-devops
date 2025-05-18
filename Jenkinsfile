@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/your-username/three-tier-devops-project.git'
+                git 'https://github.com/Sairamguthula8/three-tier-devops-project.git'
             }
         }
 
