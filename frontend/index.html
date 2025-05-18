@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Three-Tier App</title>
+</head>
+<body>
+  <h1>Welcome to Three-Tier Java DevOps Project</h1>
+  <div id="data"></div>
+  <script>
+    fetch('/api/data')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("data").innerText = JSON.stringify(data);
+      });
+  </script>
+</body>
+</html>
+
